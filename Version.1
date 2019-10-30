@@ -112,39 +112,39 @@ int main()
 		system("cls");
 		cin.clear();
 		system("cls");
-		cout << LIGHT_YELLOWF << BLUE << "--------------------------------------------------------------" DEFAULT0 << endl;
-		cout << LIGHT_YELLOWF << BLUE << BLINK_ON << "||             C  A  L  C  U  L  A  D  O  R  A              ||" DEFAULT0 << endl;
-		cout << LIGHT_YELLOWF << BLUE << "--------------------------------------------------------------" DEFAULT0 << endl;
-		cout << LIGHT_YELLOWF << BLUE << "||                                                          ||" DEFAULT0 << endl;
-		cout << LIGHT_YELLOWF << BLUE << "||----------------------------------------------------------||" DEFAULT0 << endl;
-		cout << LIGHT_YELLOWF << BLUE << "|| NOTA: * ''Para todas las opciones solo se utilizaran     ||" DEFAULT0 << endl;
-		cout << LIGHT_YELLOWF << BLUE << "||           dos valores (numeros)''.                       ||" DEFAULT0 << endl;
-		cout << LIGHT_YELLOWF << BLUE << "||----------------------------------------------------------||" DEFAULT0 << endl;
-		cout << LIGHT_YELLOWF << BLUE << "||                                                          ||" DEFAULT0 << endl;
-		cout << LIGHT_YELLOWF << BLUE << "|| " DEFAULT0 << LIGHT_YELLOWF << RED << "E s t a s   s o n   l a s   o p c i o n e s:" DEFAULT0 << LIGHT_YELLOWF << BLUE << "             ||" DEFAULT0 << endl;
-		cout << LIGHT_YELLOWF << BLUE << "||                                                          ||" DEFAULT0 << endl;
+		cout << BLUEF << LIGHT_WHITE << "--------------------------------------------------------------" DEFAULT0 << endl;
+		cout << BLUEF << LIGHT_WHITE << BLINK_ON << "||             C  A  L  C  U  L  A  D  O  R  A              ||" DEFAULT0 << endl;
+		cout << BLUEF << LIGHT_WHITE << "--------------------------------------------------------------" DEFAULT0 << endl;
+		cout << BLUEF << LIGHT_WHITE << "||                                                          ||" DEFAULT0 << endl;
+		cout << BLUEF << LIGHT_WHITE << "||----------------------------------------------------------||" DEFAULT0 << endl;
+		cout << BLUEF << LIGHT_WHITE << "|| NOTA: * ''Para todas las opciones solo se utilizaran     ||" DEFAULT0 << endl;
+		cout << BLUEF << LIGHT_WHITE << "||           dos valores (numeros)''.                       ||" DEFAULT0 << endl;
+		cout << BLUEF << LIGHT_WHITE << "||----------------------------------------------------------||" DEFAULT0 << endl;
+		cout << BLUEF << LIGHT_WHITE << "||                                                          ||" DEFAULT0 << endl;
+		cout << BLUEF << LIGHT_WHITE << "|| " DEFAULT0 << BLUEF << BLACK << "E s t a s   s o n   l a s   o p c i o n e s:" DEFAULT0 << BLUEF << LIGHT_WHITE << "             ||" DEFAULT0 << endl;
+		cout << BLUEF << LIGHT_WHITE << "||                                                          ||" DEFAULT0 << endl;
 		cout << LIGHT_MAGENTAF << WHITE << "||                     \t1.- Suma                            ||" DEFAULT0 << endl;
-		cout << LIGHT_YELLOWF << BLUE << "--------------------------------------------------------------" DEFAULT0 << endl;
+		cout << BLUEF << LIGHT_WHITE << "--------------------------------------------------------------" DEFAULT0 << endl;
 		cout << LIGHT_MAGENTAF << WHITE << "||                     \t2.- Resta                           ||" DEFAULT0 << endl;
-		cout << LIGHT_YELLOWF << BLUE << "--------------------------------------------------------------" DEFAULT0 << endl;
+		cout << BLUEF << LIGHT_WHITE << "--------------------------------------------------------------" DEFAULT0 << endl;
 		cout << LIGHT_MAGENTAF << WHITE << "||                     \t3.- Multiplicacion                  ||" DEFAULT0 << endl;
-		cout << LIGHT_YELLOWF << BLUE << "--------------------------------------------------------------" DEFAULT0 << endl;
+		cout << BLUEF << LIGHT_WHITE << "--------------------------------------------------------------" DEFAULT0 << endl;
 		cout << LIGHT_MAGENTAF << WHITE << "||                     \t4.- Division                        ||" DEFAULT0 << endl;
-		cout << LIGHT_YELLOWF << BLUE << "--------------------------------------------------------------" DEFAULT0 << endl;
+		cout << BLUEF << LIGHT_WHITE << "--------------------------------------------------------------" DEFAULT0 << endl;
 		cout << LIGHT_MAGENTAF << WHITE << "||                     \t5.- Creditos                        ||" DEFAULT0 << endl;
-		cout << LIGHT_YELLOWF << BLUE << "--------------------------------------------------------------" DEFAULT0 << endl;
+		cout << BLUEF << LIGHT_WHITE << "--------------------------------------------------------------" DEFAULT0 << endl;
 		cout << LIGHT_MAGENTAF << WHITE << "||                     \t6.-" DEFAULT0 << BLACKF << RED " SALIR " DEFAULT0 << LIGHT_MAGENTAF << WHITE << "                          ||" << endl;
-		cout << LIGHT_YELLOWF << BLUE << "--------------------------------------------------------------" DEFAULT0 << endl;
+		cout << BLUEF << LIGHT_WHITE << "--------------------------------------------------------------" DEFAULT0 << endl;
 		cout << "Elige una opcion (introduce el numero del menu): ";
 		cin >> tecla;
 		switch (tecla)
 		{
 		case '1':
 			system("cls");
-			cout << BLUEF << LIGHT_GREEN << "--------------------------------------------------------------" DEFAULT0 << endl;
-			cout << BLUEF << BLACK << "||             H A S   E L E G I D O   S U M A              ||" DEFAULT0 << endl;
-			cout << BLUEF << LIGHT_GREEN << "--------------------------------------------------------------" DEFAULT0 << endl;
-			cout << BLUEF << LIGHT_GREEN << "||                                                          ||" DEFAULT0 << endl; // 54 + 8
+			cout << GREENF << LIGHT_YELLOW << "--------------------------------------------------------------" DEFAULT0 << endl;
+			cout << GREENF << BLACK << "||             H A S   E L E G I D O   S U M A              ||" DEFAULT0 << endl;
+			cout << GREENF << LIGHT_YELLOW << "--------------------------------------------------------------" DEFAULT0 << endl;
+			cout << GREENF << LIGHT_YELLOW << "||                                                          ||" DEFAULT0 << endl; // 54 + 8
 			{
 				float valor1, valor2, suma;
 				cout << WHITEF << GREEN << "|| Introduce el primer valor(numero):                       ||" DEFAULT0 << endl;
@@ -161,27 +161,18 @@ int main()
 		case '2':
 			system("cls");
 			cout << WHITEF << MAGENTA << "--------------------------------------------------------------" DEFAULT0 << endl;
-			cout << WHITEF << MAGENTA << "||  H A S   E L E G I D O   D E C I M A L - B I N A R I O   ||" DEFAULT0 << endl;
+			cout << WHITEF << MAGENTA << "||            H A S   E L E G I D O   R E S T A             ||" DEFAULT0 << endl;
 			cout << WHITEF << MAGENTA << "--------------------------------------------------------------" DEFAULT0 << endl;
 			cout << WHITEF << MAGENTA << "||                                                          ||" DEFAULT0 << endl; //61
 			{
-				int numero, exp, digito;
-				double binario;
-				cout << GREENF << WHITE << "|| Introduce un numero en decimal:                          ||" DEFAULT0 << endl;
-				cin >> numero;
-				exp = 0;
-				binario = 0;
-				while (numero / 2 != 0)
-				{
-					digito = numero % 2;
-					binario = binario + digito * pow(10.0, exp);
-					exp++;
-					numero = numero / 2;
-				}
-				binario = binario + numero * pow(10.0, exp);
-				cout << fixed << setprecision(0);
+				float valor1, valor2, resta;
+				cout << GREENF << WHITE << "|| Introduce el primer valor(numero):                       ||" DEFAULT0 << endl;
+				cin >> valor1;
+				cout << GREENF << WHITE << "|| Introduce el segundo valor(numero):                      ||" DEFAULT0 << endl;
+				cin >> valor2;
+				resta = valor1 - valor2;
 				cout << GREENF << WHITE << "||----------------------------------------------------------||" DEFAULT0 << endl;
-				cout << GREENF << WHITE << "|| En binario seria: " << binario << "                                 ||" DEFAULT0 << endl;
+				cout << GREENF << WHITE << "||  La resta es: " << resta << "                                          ||" DEFAULT0 << endl;
 				cout << GREENF << WHITE << "||----------------------------------------------------------||" DEFAULT0 << endl;
 			}
 			pausa();
@@ -189,79 +180,38 @@ int main()
 		case '3':
 			system("cls");
 			cout << GREENF << RED << "--------------------------------------------------------------" DEFAULT0 << endl;
-			cout << GREENF << RED << "||    H A S   E L E G I D O   B I N A R I O - O C T A L     ||" DEFAULT0 << endl;
+			cout << GREENF << RED << "||   H A S   E L E G I D O   M U L T I P L I C A C I O N    ||" DEFAULT0 << endl;
 			cout << GREENF << RED << "--------------------------------------------------------------" DEFAULT0 << endl;
 			cout << GREENF << RED << "||                                                          ||" DEFAULT0 << endl;
 			{
-				int par; string resus, repu;
-				vector <string> bina;
-				vector <string> resul;
-				cout << REDF << LIGHT_YELLOW << "|| ¿Cuantos grupos de 3 digitos tiene tu codigo?:          ||" DEFAULT0 << endl;
-				cin >> par;
-				for (int i = 0; i < par; i++) {
-					cout << i + 1 << ": " << REDF << LIGHT_YELLOW << "|| Ingresa 3 digitos (en binario) de tu codigo:          ||" DEFAULT0 << endl;
-					cin >> repu;
-					bina.push_back(repu);
-					if (bina[i] == "000") {
-						resul.push_back("0");
-					}
-					if (bina[i] == "001") {
-						resul.push_back("1");
-					}
-					if (bina[i] == "010") {
-						resul.push_back("2");
-					}
-					if (bina[i] == "011") {
-						resul.push_back("3");
-					}
-
-					if (bina[i] == "100") {
-						resul.push_back("4");
-					}
-					if (bina[i] == "101") {
-						resul.push_back("5");
-					}
-					if (bina[i] == "110") {
-						resul.push_back("6");
-					}
-
-					if (bina[i] == "111") {
-						resul.push_back("7");
-					}
-					resus = resus + resul[i];
-				}
-				cout << REDF << LIGHT_YELLOW << "|| El codigo Octal es:" << resus << "                                   ||" DEFAULT0 << endl;
+				float valor1, valor2, mult;
+				cout << REDF << LIGHT_YELLOW << "|| Introduce el primer valor(numero):                       ||" DEFAULT0 << endl;
+				cin >> valor1;
+				cout << REDF << LIGHT_YELLOW << "|| Introduce el segundo valor(numero):                      ||" DEFAULT0 << endl;
+				cin >> valor2;
+				mult = valor1 * valor2;
+				cout << REDF << LIGHT_YELLOW << "||----------------------------------------------------------||" DEFAULT0 << endl;
+				cout << REDF << LIGHT_YELLOW << "||  La multiplicacion es: " << mult << "                                ||" DEFAULT0 << endl;
+				cout << REDF << LIGHT_YELLOW << "||----------------------------------------------------------||" DEFAULT0 << endl;
 			}
 			pausa();
 			break;
 		case '4':
 			system("cls");
 			cout << LIGHT_WHITEF << MAGENTA << "--------------------------------------------------------------" DEFAULT0 << endl;
-			cout << LIGHT_WHITEF << MAGENTA << "|| E L E G I S T E    B I N A R I O - H E X A D E C I M A L ||" << endl;
+			cout << LIGHT_WHITEF << MAGENTA << "||         H A S   E L E G I D O   D I V I S I O N          ||" DEFAULT0 << endl;
 			cout << LIGHT_WHITEF << MAGENTA << "--------------------------------------------------------------" DEFAULT0 << endl;
 			cout << LIGHT_WHITEF << MAGENTA << "||                                                          ||" DEFAULT0 << endl;
-			cout << LIGHT_WHITEF << MAGENTA << "|| " DEFAULT0 << LIGHT_WHITEF << CYAN << "NOTA: Favor de no ingresar mas de 9 digitos." DEFAULT0 << LIGHT_WHITEF << MAGENTA << "             ||" DEFAULT0 << endl;
-			cout << LIGHT_WHITEF << MAGENTA << "||                                                          ||" DEFAULT0 << endl; {
-
-				char numero[9], temp[2];
-				short potencia[9] = { 1,2,4,8,16,32,64,128 };
-				int i, x, total = 0, decimal[9];
-				cout << LIGHT_MAGENTAF << LIGHT_GREEN << ("|| Escriba un numero binario:                               ||" DEFAULT0) << endl;
-				cin >> ("%s", numero);
-				for (i = 0; numero[i] != '\0'; i++);
-				int limite = i;
-				i--;
-				for (x = 0; x < limite; x++, i--) {
-					temp[0] = numero[i];
-					decimal[x] = atoi(temp);
-					decimal[x] *= potencia[x];
-					total += decimal[x];
-				}
-				cout << LIGHT_MAGENTAF << LIGHT_GREEN << "||                                                          ||" DEFAULT0 << endl;
-				printf(LIGHT_MAGENTAF); printf(LIGHT_GREEN); printf("|| El resultado en decimal es: %d", total);
-				printf("                           ||\n");
-				printf("|| El resultado en hexadecimal: %x", total);
-				printf("                          ||\n"); printf(DEFAULT0);
+			{
+				float valor1, valor2, div;
+				cout << LIGHT_MAGENTAF << LIGHT_GREEN << "|| Introduce el primer valor(numero):                       ||" DEFAULT0 << endl;
+				cin >> valor1;
+				cout << LIGHT_MAGENTAF << LIGHT_GREEN << "|| Introduce el segundo valor(numero):                      ||" DEFAULT0 << endl;
+				cin >> valor2;
+				div = valor1 / valor2;
+				cout << LIGHT_MAGENTAF << LIGHT_GREEN << "||----------------------------------------------------------||" DEFAULT0 << endl;
+				cout << LIGHT_MAGENTAF << LIGHT_GREEN << "||  La division es: " << div << "                                      ||" DEFAULT0 << endl;
+				cout << LIGHT_MAGENTAF << LIGHT_GREEN << "||----------------------------------------------------------||" DEFAULT0 << endl;
 			}
 			pausa();
 			break;
